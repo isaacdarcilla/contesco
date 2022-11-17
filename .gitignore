@@ -1,0 +1,9 @@
+node_modules
+build
+coverage
+.vscode
+.fleet
+.idea
+.DS_STORE
+.env
+tmp
