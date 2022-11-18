@@ -13,4 +13,8 @@ export default class UsersController {
       pagination: request.input('pagination')
     });
   }
+
+  public async show({ request }: HttpContextContract): Promise<User | null> {
+    return await this.usersService.findById(request.param('id'));
+  }
 }

@@ -20,4 +20,5 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/users', 'UsersController.index')
+Route.get('/users', 'UsersController.index').as('users.index')
+Route.get('/users/:id', 'UsersController.show').as('users.show')
